@@ -1,0 +1,5 @@
+_frontend
+node_modules
+.env
+api.http
+ca.pem
