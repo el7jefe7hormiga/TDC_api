@@ -24,7 +24,6 @@ app.use(function (req, res, next) {
   next();
 });
 
-
 // Rutas de la API
 app.use("/", [indexRoutes])
 app.use('/api', [tdcRoutes, paymentRoutes]);
@@ -35,9 +34,10 @@ app.use((req, res, next) => {
 
 
 // cuando se despliegue la api al servidor, comentar las sig lineas:
+/*
 const { PORT, HOST, DB_USER, DB_HOST } = require("./config.js");
 app.listen(PORT);
 console.log(`🚀 Server on port ${HOST}:${PORT}`);
 console.log(`📡 BD connection ${DB_USER} @ ${DB_HOST}`);
-
+*/
 module.exports = app;
